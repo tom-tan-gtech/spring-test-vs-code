@@ -5,7 +5,7 @@
         http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd">
 
     <!-- bean definitions here -->
-    <bean id="student_bean" class="com.tomtan.spring_test_vs_code.Student" scope="singleton">
+    <bean id="student_bean" class="com.tomtan.spring_test_vs_code.Student" scope="prototype">
     </bean>
 
 </beans>
