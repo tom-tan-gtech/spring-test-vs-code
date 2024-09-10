@@ -1,9 +1,15 @@
 package com.tomtan.spring_test_vs_code;
 
 public class Student {
+	private String studentName;
 
-	public void sayHello() {
-		System.out.println("Hello world from Spring Framework ...");
+	public String getStudentName() {
+		return studentName;
 	}
+
+	public void setStudentName(String studentName) {
+		this.studentName = studentName;
+	}
+
 
 }

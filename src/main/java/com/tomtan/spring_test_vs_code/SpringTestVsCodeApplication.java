@@ -10,7 +10,7 @@ public class SpringTestVsCodeApplication {
 		ApplicationContext context = new ClassPathXmlApplicationContext("beans.xml");
 
 		Student s = (Student) context.getBean("student_bean");
-		s.sayHello();
+		System.out.println(s.getStudentName());
 
 	}
 }

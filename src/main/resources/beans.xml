@@ -5,6 +5,8 @@
         http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd">
 
     <!-- bean definitions here -->
-    <bean id="student_bean" class="com.tomtan.spring_test_vs_code.Student"></bean>
+    <bean id="student_bean" class="com.tomtan.spring_test_vs_code.Student">
+        <property name="studentName" value="Joe Smith"></property>
+    </bean>
 
 </beans>
