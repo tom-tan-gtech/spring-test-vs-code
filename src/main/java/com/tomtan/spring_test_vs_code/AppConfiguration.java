@@ -13,8 +13,14 @@ public class AppConfiguration {
         return new Student();
     }
 
-    @Bean
-    public Address getAddress() {
-        return new Address();
+    // need named beans if more than one getter returns the same type of object
+    @Bean(name="first_address")
+    public Address getAddress1() {
+        return new Address("First Address");
+    }
+
+    @Bean(name="second_address")
+    public Address getAddress2() {
+        return new Address("Second Address");
     }
 }
