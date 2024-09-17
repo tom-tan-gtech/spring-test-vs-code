@@ -3,6 +3,10 @@ package com.tomtan.spring_test_vs_code;
 public class Address {
     private String address;
 
+    public Address(){
+        this.address = "Wall Street 20";
+    }
+
     public String getAddress(){
         return address;
     }
